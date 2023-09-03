@@ -1,0 +1,43 @@
+
+
+#this means c is empty
+
+c = ""
+for i in range(5):
+    #this simply  means repeat whatever is below 5 times
+        try:
+            #I only used this try to catch errors that are not integers
+            i = int(input("Enter a number:"))
+            b = str(i)
+            #only reason for this is to convert it back to a string
+            if len (b) == 1:
+                #confirming that the user does not input more than one digit
+                print("Thanks for your input:")
+                for j in b:
+                    c += j
+                    #this just adds the strings together.
+            else:
+                print("There is an error here, one digit only")
+                continue
+        except ValueError as e:
+            print("This is not allowed, only numbers are allowed")
+d = max(c) #maximum of the numbers
+e = min(c) #minimum of the numbers
+print("The concatenated numbers are:", c)    #print the numbers
+print("The maximum number is:", d)    #print the maximum of the numbers
+print("The minimum number is:", e)    #print the minimum of the numbers
+        
+            
+    
+
+
+    
+            
+
+        
+    
+
+
+   
+
+    
